@@ -1,0 +1,16 @@
+version: 2.1
+
+jobs:
+  bd2:
+    machine:
+      image: ubuntu-1604:201903-01
+    steps:
+      - run:
+          name: nu
+          command: |
+            echo test
+
+workflows:
+  bx:
+    jobs:
+      - bd2
